@@ -8,80 +8,111 @@ export const translations = {
         experience: "Experience",
         contact: "Contact",
       },
+
       hero: {
         greeting: "Hi, I'm",
         name: "Rizki Eka Handoyo",
         role1: "Frontend Developer",
         role2: "Backend Developer",
-        role3: "UI/UX Design",
-        description: "I build clean, user-focused web experiences with modern technologies. Passionate about creating pixel-perfect interfaces with structured code and thoughtful problem-solving.",
+        role3: "UI/UX Enthusiast",
+        description:
+          "I build clean, user-focused web applications with modern technologies. Passionate about structured code, scalable architecture, and thoughtful problem-solving.",
         viewProjects: "View Projects",
         contact: "Contact Me",
       },
+
       about: {
         title: "About Me",
-        p1: "I'm a Frontend Developer specializing in React and Next.js, with a strong focus on building scalable and maintainable web applications. I believe in writing clean, efficient code that delivers exceptional user experiences.",
-        p2: "With a keen eye for design and attention to detail, I transform complex problems into elegant solutions. I'm constantly learning and adapting to new technologies to stay at the forefront of web development.",
-        p3: "When I'm not coding, I enjoy exploring new frameworks, contributing to open-source projects, and sharing knowledge with the developer community.",
+        p1:
+          "I'm a web developer with a strong interest in building modern, scalable, and maintainable applications using React and Next.js.",
+        p2:
+          "I enjoy turning complex problems into simple and elegant solutions, with a strong focus on clean code and good user experience.",
+        p3:
+          "Through school, internship, and self-learning, I continue to sharpen my skills by building real-world projects and learning modern web technologies.",
       },
+
       skills: {
         title: "Skills & Technologies",
-        subtitle: "Technologies I work with to build modern web applications",
+        subtitle: "Technologies I use to build modern web applications",
       },
+
       projects: {
         title: "Featured Projects",
-        subtitle: "Some of my recent work that showcases my skills",
+        subtitle: "Real projects I have built during my learning journey",
         viewDemo: "Live Demo",
         viewCode: "Source Code",
+
         project1: {
-          name: "E-Commerce Dashboard",
-          description: "A comprehensive admin dashboard for e-commerce management with real-time analytics, inventory tracking, and order management.",
+          name: "Web POS System",
+          description:
+            "A Point of Sale web application with Admin and Cashier roles. Admin manages dashboard, products, users, and categories, while Cashier handles transactions.",
         },
+
         project2: {
-          name: "Task Management App",
-          description: "A collaborative task management application with drag-and-drop functionality, real-time updates, and team collaboration features.",
+          name: "Inventory Management System",
+          description:
+            "A web-based inventory system for managing school assets. Items can be stored, borrowed, and tracked by students digitally.",
         },
+
         project3: {
-          name: "Portfolio Generator",
-          description: "A dynamic portfolio generator that allows developers to create stunning portfolios with customizable themes and components.",
+          name: "SkyMarket",
+          description:
+            "A multi-role commerce system with Admin, Cashier, and Customer roles. Supports offline transactions for cashier and online orders for customers.",
+        },
+
+        project4: {
+          name: "Weather App",
+          description:
+            "A simple weather application that displays real-time weather data based on user location using public weather APIs.",
         },
       },
+
       experience: {
         title: "Experience & Journey",
-        subtitle: "My professional journey and learning path",
+        subtitle: "My education, internship, and self-learning journey",
+
         exp1: {
-          title: "Frontend Developer",
-          company: "Tech Company",
-          period: "2023 - Present",
-          description: "Building responsive web applications using React, Next.js, and TypeScript. Collaborating with design and backend teams to deliver high-quality products.",
+          title: "Software Engineering Student",
+          company: "SMKN 1 Cianjur",
+          period: "2022 - 2025",
+          description:
+            "Studied software engineering fundamentals including web development, databases, and programming logic. Built multiple web projects for school assignments and practice.",
         },
+
         exp2: {
-          title: "Junior Frontend Developer",
-          company: "Startup Inc",
-          period: "2022 - 2023",
-          description: "Developed and maintained multiple client-facing applications. Implemented responsive designs and improved application performance.",
+          title: "Backend Developer Intern (PKL)",
+          company: "PT Hexagon Karya Tama",
+          period: "Aug 2024 - Nov 2024",
+          description:
+            "Worked as a backend-focused intern developing APIs and application logic. Also contributed to frontend development using React and Next.js and handled frontend-backend integration.",
         },
+
         exp3: {
-          title: "Self-Learning Journey",
-          company: "Independent",
-          period: "2021 - 2022",
-          description: "Intensive self-study in web development fundamentals, React ecosystem, and modern frontend tooling. Built numerous personal projects to solidify skills.",
+          title: "Independent Learning & Project Development",
+          company: "Self-Learning",
+          period: "May 2025 - Present",
+          description:
+            "Actively learning modern web development through real projects. Focused on Next.js, React, and improving application structure, scalability, and UI/UX quality.",
         },
       },
+
       contact: {
         title: "Get In Touch",
-        subtitle: "I'm currently open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out!",
+        subtitle:
+          "I'm open to learning opportunities, collaboration, or discussion. Feel free to reach out anytime.",
         email: "Email",
         github: "GitHub",
         linkedin: "LinkedIn",
         cta: "Say Hello",
       },
+
       footer: {
         designed: "Designed & Built by",
         rights: "All rights reserved.",
       },
     },
   },
+
   id: {
     translation: {
       nav: {
@@ -91,74 +122,104 @@ export const translations = {
         experience: "Pengalaman",
         contact: "Kontak",
       },
+
       hero: {
         greeting: "Halo, saya",
         name: "Rizki Eka Handoyo",
         role1: "Frontend Developer",
         role2: "Backend Developer",
-        role3: "UI/UX Design",
-        description: "Saya membangun pengalaman web yang bersih dan berfokus pada pengguna dengan teknologi modern. Bersemangat menciptakan antarmuka yang presisi dengan kode terstruktur dan pemecahan masalah yang matang.",
+        role3: "UI/UX Enthusiast",
+        description:
+          "Saya membangun aplikasi web yang bersih dan berfokus pada pengguna dengan teknologi modern. Mengutamakan kode terstruktur, arsitektur yang rapi, dan pemecahan masalah yang matang.",
         viewProjects: "Lihat Proyek",
         contact: "Hubungi Saya",
       },
+
       about: {
         title: "Tentang Saya",
-        p1: "Saya seorang Frontend Developer yang mengkhususkan diri dalam React dan Next.js, dengan fokus kuat pada membangun aplikasi web yang skalabel dan mudah dipelihara. Saya percaya pada penulisan kode yang bersih dan efisien yang memberikan pengalaman pengguna yang luar biasa.",
-        p2: "Dengan mata yang tajam untuk desain dan perhatian terhadap detail, saya mengubah masalah kompleks menjadi solusi yang elegan. Saya terus belajar dan beradaptasi dengan teknologi baru untuk tetap berada di garis depan pengembangan web.",
-        p3: "Ketika tidak coding, saya menikmati mengeksplorasi framework baru, berkontribusi pada proyek open-source, dan berbagi pengetahuan dengan komunitas developer.",
+        p1:
+          "Saya adalah web developer dengan minat kuat dalam membangun aplikasi modern, skalabel, dan mudah dipelihara menggunakan React dan Next.js.",
+        p2:
+          "Saya menikmati mengubah masalah kompleks menjadi solusi yang sederhana dan elegan dengan fokus pada kualitas kode dan pengalaman pengguna.",
+        p3:
+          "Melalui sekolah, PKL, dan belajar mandiri, saya terus mengembangkan kemampuan dengan membangun proyek nyata dan mempelajari teknologi web modern.",
       },
+
       skills: {
         title: "Keahlian & Teknologi",
         subtitle: "Teknologi yang saya gunakan untuk membangun aplikasi web modern",
       },
+
       projects: {
         title: "Proyek Unggulan",
-        subtitle: "Beberapa karya terbaru saya yang menunjukkan keahlian saya",
+        subtitle: "Proyek nyata yang saya bangun selama perjalanan belajar",
         viewDemo: "Demo Langsung",
         viewCode: "Kode Sumber",
+
         project1: {
-          name: "Dashboard E-Commerce",
-          description: "Dashboard admin komprehensif untuk manajemen e-commerce dengan analitik real-time, pelacakan inventaris, dan manajemen pesanan.",
+          name: "Sistem Web POS",
+          description:
+            "Aplikasi Point of Sale berbasis web dengan role Admin dan Kasir. Admin mengelola dashboard, produk, user, dan kategori, sedangkan Kasir menangani transaksi.",
         },
+
         project2: {
-          name: "Aplikasi Manajemen Tugas",
-          description: "Aplikasi manajemen tugas kolaboratif dengan fungsi drag-and-drop, pembaruan real-time, dan fitur kolaborasi tim.",
+          name: "Sistem Inventori Sekolah",
+          description:
+            "Sistem inventori berbasis web untuk pengelolaan barang sekolah. Barang dapat disimpan, dipinjam, dan dicatat secara digital oleh siswa.",
         },
+
         project3: {
-          name: "Generator Portfolio",
-          description: "Generator portfolio dinamis yang memungkinkan developer membuat portfolio menakjubkan dengan tema dan komponen yang dapat dikustomisasi.",
+          name: "SkyMarket",
+          description:
+            "Sistem penjualan dengan tiga role: Admin, Kasir, dan Pelanggan. Mendukung transaksi offline dan online dalam satu platform.",
+        },
+
+        project4: {
+          name: "Aplikasi Cuaca",
+          description:
+            "Aplikasi cuaca sederhana yang menampilkan informasi cuaca secara real-time berdasarkan lokasi menggunakan API cuaca publik.",
         },
       },
+
       experience: {
         title: "Pengalaman & Perjalanan",
-        subtitle: "Perjalanan profesional dan jalur pembelajaran saya",
+        subtitle: "Perjalanan pendidikan, PKL, dan belajar mandiri",
+
         exp1: {
-          title: "Frontend Developer",
-          company: "Perusahaan Teknologi",
-          period: "2023 - Sekarang",
-          description: "Membangun aplikasi web responsif menggunakan React, Next.js, dan TypeScript. Berkolaborasi dengan tim desain dan backend untuk menghasilkan produk berkualitas tinggi.",
+          title: "Siswa Rekayasa Perangkat Lunak",
+          company: "SMKN 1 Cianjur",
+          period: "2022 - 2025",
+          description:
+            "Mempelajari dasar rekayasa perangkat lunak seperti pengembangan web, database, dan logika pemrograman. Mengerjakan berbagai proyek web untuk tugas sekolah dan latihan.",
         },
+
         exp2: {
-          title: "Junior Frontend Developer",
-          company: "Startup Inc",
-          period: "2022 - 2023",
-          description: "Mengembangkan dan memelihara beberapa aplikasi yang menghadap klien. Mengimplementasikan desain responsif dan meningkatkan performa aplikasi.",
+          title: "PKL Backend Developer",
+          company: "PT Hexagon Karya Tama",
+          period: "Agustus 2024 - November 2024",
+          description:
+            "Berperan sebagai backend intern dengan fokus pada pembuatan API dan logika aplikasi. Juga terlibat dalam pengembangan frontend menggunakan React dan Next.js serta integrasi sistem.",
         },
+
         exp3: {
-          title: "Perjalanan Belajar Mandiri",
-          company: "Independen",
-          period: "2021 - 2022",
-          description: "Studi mandiri intensif dalam fundamental pengembangan web, ekosistem React, dan tooling frontend modern. Membangun banyak proyek personal untuk memperkuat keahlian.",
+          title: "Belajar Mandiri & Pengembangan Proyek",
+          company: "Mandiri",
+          period: "Mei 2025 - Sekarang",
+          description:
+            "Belajar web development secara mandiri melalui proyek nyata dengan fokus pada Next.js, React, serta peningkatan kualitas arsitektur kode dan UI/UX.",
         },
       },
+
       contact: {
         title: "Hubungi Saya",
-        subtitle: "Saya saat ini terbuka untuk peluang baru. Apakah Anda punya pertanyaan atau hanya ingin menyapa, jangan ragu untuk menghubungi!",
+        subtitle:
+          "Saya terbuka untuk belajar, kolaborasi, dan diskusi. Jangan ragu untuk menghubungi saya kapan saja.",
         email: "Email",
         github: "GitHub",
         linkedin: "LinkedIn",
         cta: "Kirim Pesan",
       },
+
       footer: {
         designed: "Didesain & Dibangun oleh",
         rights: "Hak cipta dilindungi.",
