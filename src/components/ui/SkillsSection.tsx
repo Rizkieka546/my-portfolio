@@ -4,25 +4,23 @@ import { useTranslation } from 'react-i18next';
 import { useRef } from 'react';
 
 const skills = [
-  { name: 'React', level: 95 },
-  { name: 'Next.js', level: 90 },
-  { name: 'TypeScript', level: 88 },
-  { name: 'Tailwind CSS', level: 95 },
-  { name: 'JavaScript', level: 92 },
-  { name: 'HTML/CSS', level: 95 },
+  { name: 'React', level: 80 },
+  { name: 'Next.js', level: 85 },
+  { name: 'TypeScript / Javascript', level: 75 },
+  { name: 'Tailwind CSS', level: 90 },
+  { name: 'HTML/CSS', level: 90 },
   { name: 'Git', level: 85 },
   { name: 'Framer Motion', level: 80 },
+  { name: 'Laravel', level: 70 },
 ];
 
 const tools = [
   'VS Code',
-  'Figma',
   'GitHub',
   'Vercel',
-  'npm/yarn',
-  'REST APIs',
+  'AI',
+  'ChatGPT',
   'Responsive Design',
-  'Performance Optimization',
 ];
 
 const SkillsSection = () => {

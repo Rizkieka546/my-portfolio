@@ -16,7 +16,7 @@ export const translations = {
         role2: "Backend Developer",
         role3: "UI/UX Enthusiast",
         description:
-          "I build clean, user-focused web applications with modern technologies. Passionate about structured code, scalable architecture, and thoughtful problem-solving.",
+          "I build clean, user-focused web applications with modern technologies. My primary experience is in React and Next.js, but I adapt quickly to new languages and frameworks by learning from documentation and applying them directly in real projects.",
         viewProjects: "View Projects",
         contact: "Contact Me",
       },
@@ -24,16 +24,16 @@ export const translations = {
       about: {
         title: "About Me",
         p1:
-          "I'm a web developer with a strong interest in building modern, scalable, and maintainable applications using React and Next.js.",
+          "I'm a web developer with a strong interest in building modern, scalable, and maintainable applications. React and Next.js are my primary tools, but I approach technologies as flexible solutions rather than fixed limitations.",
         p2:
-          "I enjoy turning complex problems into simple and elegant solutions, with a strong focus on clean code and good user experience.",
+          "I enjoy turning complex problems into simple and elegant solutions, with a strong focus on clean code, clear architecture, and thoughtful user experience.",
         p3:
-          "Through school, internship, and self-learning, I continue to sharpen my skills by building real-world projects and learning modern web technologies.",
+          "Through school, internship, and self-learning, I continuously sharpen my skills by building real-world projects and adapting to different tools and technologies as needed.",
       },
 
       skills: {
         title: "Skills & Technologies",
-        subtitle: "Technologies I use to build modern web applications",
+        subtitle: "Technologies I use and adapt to when building web applications",
       },
 
       projects: {
@@ -45,25 +45,25 @@ export const translations = {
         project1: {
           name: "Web POS System",
           description:
-            "A Point of Sale web application with Admin and Cashier roles. Admin manages dashboard, products, users, and categories, while Cashier handles transactions.",
+            "A Point of Sale web application with Admin and Cashier roles. Focused on clear role separation, maintainable structure, and real-world transaction workflows.",
         },
 
         project2: {
           name: "Inventory Management System",
           description:
-            "A web-based inventory system for managing school assets. Items can be stored, borrowed, and tracked by students digitally.",
+            "A web-based inventory system for managing school assets, designed to simplify item tracking, borrowing, and record management.",
         },
 
         project3: {
           name: "SkyMarket",
           description:
-            "A multi-role commerce system with Admin, Cashier, and Customer roles. Supports offline transactions for cashier and online orders for customers.",
+            "A multi-role commerce system supporting Admin, Cashier, and Customer roles, combining offline cashier transactions with online ordering features.",
         },
 
         project4: {
           name: "Weather App",
           description:
-            "A simple weather application that displays real-time weather data based on user location using public weather APIs.",
+            "A simple weather application that consumes public APIs to display real-time weather data based on user location.",
         },
       },
 
@@ -76,7 +76,7 @@ export const translations = {
           company: "SMKN 1 Cianjur",
           period: "2022 - 2025",
           description:
-            "Studied software engineering fundamentals including web development, databases, and programming logic. Built multiple web projects for school assignments and practice.",
+            "Learned software engineering fundamentals including web development, databases, and programming logic. Built multiple web projects to strengthen problem-solving and technical foundations.",
         },
 
         exp2: {
@@ -84,7 +84,7 @@ export const translations = {
           company: "PT Hexagon Karya Tama",
           period: "Aug 2024 - Nov 2024",
           description:
-            "Worked as a backend-focused intern developing APIs and application logic. Also contributed to frontend development using React and Next.js and handled frontend-backend integration.",
+            "Worked mainly on backend development, building APIs and application logic. Also collaborated on frontend tasks and handled integration between frontend and backend systems.",
         },
 
         exp3: {
@@ -92,14 +92,14 @@ export const translations = {
           company: "Self-Learning",
           period: "May 2025 - Present",
           description:
-            "Actively learning modern web development through real projects. Focused on Next.js, React, and improving application structure, scalability, and UI/UX quality.",
+            "Continuously learning through hands-on projects. While React and Next.js remain my core stack, I actively explore and adapt to new tools, frameworks, and workflows to improve maintainability, scalability, and overall quality.",
         },
       },
 
       contact: {
         title: "Get In Touch",
         subtitle:
-          "I'm open to learning opportunities, collaboration, or discussion. Feel free to reach out anytime.",
+          "I'm open to learning opportunities, collaboration, and thoughtful discussions. Feel free to reach out anytime.",
         email: "Email",
         github: "GitHub",
         linkedin: "LinkedIn",
@@ -130,7 +130,7 @@ export const translations = {
         role2: "Backend Developer",
         role3: "UI/UX Enthusiast",
         description:
-          "Saya membangun aplikasi web yang bersih dan berfokus pada pengguna dengan teknologi modern. Mengutamakan kode terstruktur, arsitektur yang rapi, dan pemecahan masalah yang matang.",
+          "Saya membangun aplikasi web yang bersih dan berfokus pada pengguna dengan teknologi modern. React dan Next.js adalah stack utama saya, namun saya cepat beradaptasi dengan bahasa pemrograman dan framework lain melalui dokumentasi dan penerapan langsung pada proyek nyata.",
         viewProjects: "Lihat Proyek",
         contact: "Hubungi Saya",
       },
@@ -138,16 +138,16 @@ export const translations = {
       about: {
         title: "Tentang Saya",
         p1:
-          "Saya adalah web developer dengan minat kuat dalam membangun aplikasi modern, skalabel, dan mudah dipelihara menggunakan React dan Next.js.",
+          "Saya adalah web developer dengan minat kuat dalam membangun aplikasi modern, skalabel, dan mudah dipelihara. React dan Next.js merupakan tools utama saya, namun saya memandang teknologi sebagai solusi yang fleksibel, bukan batasan.",
         p2:
-          "Saya menikmati mengubah masalah kompleks menjadi solusi yang sederhana dan elegan dengan fokus pada kualitas kode dan pengalaman pengguna.",
+          "Saya menikmati mengubah masalah kompleks menjadi solusi yang sederhana dan elegan, dengan fokus pada kualitas kode, arsitektur yang jelas, dan pengalaman pengguna yang matang.",
         p3:
-          "Melalui sekolah, PKL, dan belajar mandiri, saya terus mengembangkan kemampuan dengan membangun proyek nyata dan mempelajari teknologi web modern.",
+          "Melalui sekolah, PKL, dan belajar mandiri, saya terus mengasah kemampuan dengan membangun proyek nyata serta beradaptasi dengan berbagai teknologi sesuai kebutuhan.",
       },
 
       skills: {
         title: "Keahlian & Teknologi",
-        subtitle: "Teknologi yang saya gunakan untuk membangun aplikasi web modern",
+        subtitle: "Teknologi yang saya gunakan dan pelajari dalam pengembangan aplikasi web",
       },
 
       projects: {
@@ -159,25 +159,25 @@ export const translations = {
         project1: {
           name: "Sistem Web POS",
           description:
-            "Aplikasi Point of Sale berbasis web dengan role Admin dan Kasir. Admin mengelola dashboard, produk, user, dan kategori, sedangkan Kasir menangani transaksi.",
+            "Aplikasi Point of Sale berbasis web dengan role Admin dan Kasir, dirancang dengan pemisahan peran yang jelas dan alur transaksi yang mendekati kebutuhan dunia nyata.",
         },
 
         project2: {
           name: "Sistem Inventori Sekolah",
           description:
-            "Sistem inventori berbasis web untuk pengelolaan barang sekolah. Barang dapat disimpan, dipinjam, dan dicatat secara digital oleh siswa.",
+            "Sistem inventori berbasis web untuk pengelolaan aset sekolah, mempermudah pencatatan, peminjaman, dan pelacakan barang.",
         },
 
         project3: {
           name: "SkyMarket",
           description:
-            "Sistem penjualan dengan tiga role: Admin, Kasir, dan Pelanggan. Mendukung transaksi offline dan online dalam satu platform.",
+            "Sistem penjualan multi-role yang mendukung Admin, Kasir, dan Pelanggan, dengan kombinasi transaksi offline dan pemesanan online.",
         },
 
         project4: {
           name: "Aplikasi Cuaca",
           description:
-            "Aplikasi cuaca sederhana yang menampilkan informasi cuaca secara real-time berdasarkan lokasi menggunakan API cuaca publik.",
+            "Aplikasi cuaca sederhana yang memanfaatkan API publik untuk menampilkan informasi cuaca secara real-time berdasarkan lokasi pengguna.",
         },
       },
 
@@ -190,7 +190,7 @@ export const translations = {
           company: "SMKN 1 Cianjur",
           period: "2022 - 2025",
           description:
-            "Mempelajari dasar rekayasa perangkat lunak seperti pengembangan web, database, dan logika pemrograman. Mengerjakan berbagai proyek web untuk tugas sekolah dan latihan.",
+            "Mempelajari dasar rekayasa perangkat lunak seperti pengembangan web, database, dan logika pemrograman, serta membangun berbagai proyek untuk memperkuat pemahaman teknis.",
         },
 
         exp2: {
@@ -198,7 +198,7 @@ export const translations = {
           company: "PT Hexagon Karya Tama",
           period: "Agustus 2024 - November 2024",
           description:
-            "Berperan sebagai backend intern dengan fokus pada pembuatan API dan logika aplikasi. Juga terlibat dalam pengembangan frontend menggunakan React dan Next.js serta integrasi sistem.",
+            "Berfokus pada pengembangan backend dengan membangun API dan logika aplikasi, serta bekerja sama dengan tim frontend dalam proses integrasi sistem.",
         },
 
         exp3: {
@@ -206,14 +206,14 @@ export const translations = {
           company: "Mandiri",
           period: "Mei 2025 - Sekarang",
           description:
-            "Belajar web development secara mandiri melalui proyek nyata dengan fokus pada Next.js, React, serta peningkatan kualitas arsitektur kode dan UI/UX.",
+            "Terus belajar melalui proyek nyata. Meskipun React dan Next.js menjadi stack utama, saya aktif mengeksplorasi dan menyesuaikan diri dengan teknologi baru untuk meningkatkan kualitas arsitektur dan UI/UX.",
         },
       },
 
       contact: {
         title: "Hubungi Saya",
         subtitle:
-          "Saya terbuka untuk belajar, kolaborasi, dan diskusi. Jangan ragu untuk menghubungi saya kapan saja.",
+          "Saya terbuka untuk kesempatan belajar, kolaborasi, dan diskusi yang bermakna. Jangan ragu untuk menghubungi saya kapan saja.",
         email: "Email",
         github: "GitHub",
         linkedin: "LinkedIn",

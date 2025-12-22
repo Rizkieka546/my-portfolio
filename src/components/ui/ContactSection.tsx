@@ -26,8 +26,8 @@ const ContactSection = () => {
     {
       icon: Linkedin,
       label: t("contact.linkedin"),
-      value: "linkedin.com/in/rizkihandoyo",
-      href: "https://linkedin.com/in/rizkihandoyo",
+      value: "...",
+      href: "#",
     },
   ];
 
