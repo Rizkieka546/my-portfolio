@@ -5,7 +5,7 @@ import { useRef } from 'react';
 
 const skills = [
   { name: 'React', level: 80 },
-  { name: 'Next.js', level: 85 },
+  { name: 'Next.js', level: 80 },
   { name: 'TypeScript / Javascript', level: 75 },
   { name: 'Tailwind CSS', level: 90 },
   { name: 'HTML/CSS', level: 90 },
