@@ -65,6 +65,12 @@ export const translations = {
           description:
             "A simple weather application that consumes public APIs to display real-time weather data based on user location.",
         },
+        project5: {
+          name: "FlowTask",
+          description:
+            "A calm and opinionated task management application designed to help individuals and small teams work with clarity and focus. Built with a strong emphasis on simplicity, thoughtful UI/UX decisions, and real-world product thinking rather than feature quantity.",
+        },
+
       },
 
       experience: {
@@ -179,6 +185,12 @@ export const translations = {
           description:
             "Aplikasi cuaca sederhana yang memanfaatkan API publik untuk menampilkan informasi cuaca secara real-time berdasarkan lokasi pengguna.",
         },
+        project5: {
+  name: "FlowTask",
+  description:
+    "Aplikasi manajemen tugas yang dirancang dengan pendekatan tenang dan fokus, ditujukan untuk individu dan tim kecil. FlowTask menekankan kesederhanaan, keputusan UI/UX yang matang, serta cara berpikir produk nyata, bukan sekadar penumpukan fitur.",
+},
+
       },
 
       experience: {

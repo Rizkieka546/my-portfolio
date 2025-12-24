@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next';
 import { useRef } from 'react';
 
 const skills = [
-  { name: 'React', level: 80 },
-  { name: 'Next.js', level: 80 },
+  { name: 'React', level: 75 },
+  { name: 'Next.js', level: 75 },
   { name: 'TypeScript / Javascript', level: 75 },
-  { name: 'Tailwind CSS', level: 90 },
+  { name: 'Tailwind CSS', level: 85 },
   { name: 'HTML/CSS', level: 90 },
   { name: 'Git', level: 85 },
   { name: 'Framer Motion', level: 80 },

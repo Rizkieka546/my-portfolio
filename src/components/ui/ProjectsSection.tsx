@@ -44,6 +44,14 @@ const ProjectsSection = () => {
       github: 'https://github.com/Rizkieka546/weather-app-sederhana',
       image: '/projects/weather.png',
     },
+    {
+      name: t('projects.project5.name'),
+      description: t('projects.project5.description'),
+      tech: ['Next.Js', 'React', 'Tailwind CSS', 'TypeScript'],
+      demo: 'https://landing-page-flowtask.vercel.app/',
+      github: 'https://github.com/Rizkieka546/landing-page-flowtask',
+      image: '/projects/flowtask.png',
+    },
   ];
 
   return (
