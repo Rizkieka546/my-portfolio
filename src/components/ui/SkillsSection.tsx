@@ -3,7 +3,7 @@ import { motion, useInView } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useRef } from 'react';
 
-import {Cpu, Layout, Workflow } from 'lucide-react';
+import { Cpu, Layout, Workflow } from 'lucide-react';
 
 const skillCategories = [
   {
@@ -48,12 +48,12 @@ const SkillsSection = () => {
       className="py-24 md:py-32 bg-white dark:bg-gray-950 relative overflow-hidden"
       ref={ref}
     >
-      <div className="absolute inset-0 z-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none" 
-           style={{ backgroundImage: 'radial-gradient(#14b8a6 0.5px, transparent 0.5px)', backgroundSize: '32px 32px' }} 
+      <div className="absolute inset-0 z-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none"
+        style={{ backgroundImage: 'radial-gradient(#14b8a6 0.5px, transparent 0.5px)', backgroundSize: '32px 32px' }}
       />
 
       <div className="max-w-6xl mx-auto px-6 md:px-8 lg:px-12 relative z-10">
-        
+
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -71,11 +71,11 @@ const SkillsSection = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-12">
-          
+
           <div className="lg:col-span-2 space-y-12">
             {skillCategories.map((category, catIdx) => (
               <div key={catIdx}>
-                <motion.h3 
+                <motion.h3
                   initial={{ opacity: 0 }}
                   animate={isInView ? { opacity: 1 } : {}}
                   className="text-xs font-bold uppercase tracking-[0.3em] text-teal-600 dark:text-teal-400 mb-8 flex items-center gap-3"
@@ -85,8 +85,8 @@ const SkillsSection = () => {
                   </span>
                   {category.title}
                 </motion.h3>
-                
-                <motion.div 
+
+                <motion.div
                   variants={containerVariants}
                   initial="hidden"
                   animate={isInView ? "visible" : "hidden"}
@@ -125,7 +125,7 @@ const SkillsSection = () => {
                   Workflow Tools
                 </h3>
               </div>
-              
+
               <div className="flex flex-wrap gap-2">
                 {tools.map((tool) => (
                   <motion.span
@@ -137,13 +137,13 @@ const SkillsSection = () => {
                   </motion.span>
                 ))}
               </div>
-              
+
               <div className="mt-8 pt-8 border-t border-gray-200/50 dark:border-gray-800/50">
                 <div className="flex gap-1 mb-3">
                   {[1, 2, 3].map(i => <div key={i} className="w-1 h-1 rounded-full bg-teal-500/40" />)}
                 </div>
                 <p className="text-sm text-gray-500 dark:text-gray-500 italic leading-relaxed font-serif">
-                  "Saya percaya kode yang baik bukan hanya tentang fungsionalitas, tapi juga tentang kejelasan dan kemudahan pemeliharaan."
+                  &ldquo;Saya percaya kode yang baik bukan hanya tentang fungsionalitas, tapi juga tentang kejelasan dan kemudahan pemeliharaan.&rdquo;
                 </p>
               </div>
             </div>
