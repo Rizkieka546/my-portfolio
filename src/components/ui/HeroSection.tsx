@@ -1,129 +1,177 @@
-'use client'
+'use client';
+
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
-import { ExternalLink, Mail } from 'lucide-react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useState, useEffect, useMemo } from 'react';
+import { ExternalLink, Mail, ChevronDown } from 'lucide-react';
 
 const HeroSection = () => {
   const { t } = useTranslation();
+  const { scrollY } = useScroll();
 
-  // Multi-role array
-  const roles = [
-    t('hero.role1'), 
-    t('hero.role2'), 
-    t('hero.role3'), 
-  ];
+  // Efek parallax halus untuk elemen background saat scroll
+  const bgY = useTransform(scrollY, [0, 500], [0, 200]);
+
+  const roles = useMemo(
+    () => [t('hero.role1'), t('hero.role2'), t('hero.role3')],
+    [t]
+  );
 
   const [currentRole, setCurrentRole] = useState('');
   const [roleIndex, setRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
 
-  // Typing effect loop
+  // Logic Typing yang lebih smooth (bisa mengetik dan menghapus)
   useEffect(() => {
-    const typingSpeed = 100; // ms per char
-    const pauseTime = 1500; // pause after full text
+    const typingSpeed = isDeleting ? 50 : 100;
+    const pauseTime = isDeleting ? 500 : 2000;
 
     const timeout = setTimeout(() => {
-      if (charIndex < roles[roleIndex].length) {
-        setCurrentRole(roles[roleIndex].slice(0, charIndex + 1));
-        setCharIndex(charIndex + 1);
+      const currentFullText = roles[roleIndex];
+
+      if (!isDeleting && charIndex < currentFullText.length) {
+        setCurrentRole(currentFullText.slice(0, charIndex + 1));
+        setCharIndex(prev => prev + 1);
+      } else if (isDeleting && charIndex > 0) {
+        setCurrentRole(currentFullText.slice(0, charIndex - 1));
+        setCharIndex(prev => prev - 1);
       } else {
-        // pause before deleting
-        setTimeout(() => {
-          setCurrentRole('');
-          setCharIndex(0);
-          setRoleIndex((roleIndex + 1) % roles.length);
-        }, pauseTime);
+        setIsDeleting(!isDeleting);
+        if (!isDeleting) {
+          // Pause di akhir kata sebelum menghapus
+          setTimeout(() => { }, pauseTime);
+        } else {
+          // Ganti ke kata berikutnya setelah selesai menghapus
+          setRoleIndex(prev => (prev + 1) % roles.length);
+        }
       }
     }, typingSpeed);
 
     return () => clearTimeout(timeout);
-  }, [charIndex, roleIndex, roles]);
+  }, [charIndex, isDeleting, roleIndex, roles]);
 
-  const scrollToProjects = () => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
-  const scrollToContact = () => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollTo = (id: string) => {
+    const element = document.querySelector(id);
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-white dark:bg-gray-900 pt-20">
-      {/* Background animated circles */}
-      <div className="absolute inset-0 pointer-events-none">
-        <motion.div
-          className="absolute top-1/4 -right-20 w-72 h-72 bg-teal-400/10 rounded-full blur-3xl"
-          animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
-          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-        />
-        <motion.div
-          className="absolute bottom-1/4 -left-20 w-96 h-96 bg-sky-400/5 rounded-full blur-3xl"
-          animate={{ scale: [1.2, 1, 1.2], opacity: [0.2, 0.4, 0.2] }}
-          transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
-        />
+    <section className="relative min-h-[90vh] md:min-h-screen flex items-center bg-white dark:bg-gray-950 pt-20 overflow-hidden pb-5">
+      {/* Background Ornaments */}
+      <motion.div
+        style={{ y: bgY }}
+        className="absolute top-20 -right-20 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-teal-500/10 dark:bg-teal-500/5 rounded-full blur-[120px] pointer-events-none"
+      />
+      <motion.div
+        style={{ y: bgY }}
+        className="absolute bottom-10 -left-20 w-[250px] md:w-[500px] h-[250px] md:h-[500px] bg-sky-500/10 dark:bg-sky-500/5 rounded-full blur-[100px] pointer-events-none"
+      />
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-8 lg:px-12 w-full">
+        <div className="max-w-3xl space-y-8 text-center md:text-left">
+
+          {/* Tagline / Greeting */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex items-center justify-center md:justify-start gap-3"
+          >
+            <span className="h-px w-8 bg-teal-500 hidden md:block"></span>
+            <p className="font-mono text-sm md:text-base font-medium text-teal-600 dark:text-teal-400 tracking-wider">
+              {t('hero.greeting')}
+            </p>
+          </motion.div>
+
+          {/* Main Headline */}
+          <div className="space-y-4">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-5xl md:text-8xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+            >
+              {t('hero.name')}
+              <span className="text-teal-500">.</span>
+            </motion.h1>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="flex justify-center md:justify-start items-center gap-3 text-2xl md:text-5xl font-bold text-gray-500 dark:text-gray-400"
+            >
+              <h2 className="min-h-[1.2em]">
+                {currentRole}
+                <motion.span
+                  animate={{ opacity: [1, 0] }}
+                  transition={{
+                    duration: 0.8,
+                    repeat: Infinity,
+                    ease: [1, 0, 0, 1]
+                  }}
+                  className="inline-block w-[3px] h-[0.9em] bg-teal-500 ml-1 align-middle"
+                />
+              </h2>
+            </motion.div>
+          </div>
+
+          {/* Bio Description */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="text-gray-600 dark:text-gray-400 text-lg md:text-xl leading-relaxed max-w-2xl"
+          >
+            {t('hero.description')}
+          </motion.p>
+
+          {/* CTA Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex flex-wrap justify-center md:justify-start gap-4 pt-4"
+          >
+            <motion.button
+              onClick={() => scrollTo('#projects')}
+              whileHover={{ scale: 1.05, translateY: -2 }}
+              whileTap={{ scale: 0.98 }}
+              className="group relative inline-flex items-center gap-2 rounded-xl bg-gray-900 dark:bg-teal-500 px-8 py-4 font-semibold text-white transition-all hover:shadow-[0_10px_20px_rgba(20,184,166,0.3)] dark:hover:bg-teal-400"
+            >
+              {t('hero.viewProjects')}
+              <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </motion.button>
+
+            <motion.button
+              onClick={() => scrollTo('#contact')}
+              whileHover={{ scale: 1.05, translateY: -2 }}
+              whileTap={{ scale: 0.98 }}
+              className="inline-flex items-center gap-2 rounded-xl border-2 border-gray-200 dark:border-gray-800 px-8 py-4 font-semibold text-gray-900 dark:text-white transition-all hover:border-teal-500 hover:text-teal-500"
+            >
+              {t('hero.contact')}
+              <Mail className="w-4 h-4" />
+            </motion.button>
+          </motion.div>
+        </div>
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 md:px-8 lg:px-12 relative z-10 text-center md:text-left">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="font-mono text-teal-400 dark:text-teal-500 mb-4 text-sm md:text-base"
-        >
-          {t('hero.greeting')}
-        </motion.p>
-
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-5xl md:text-7xl font-bold mb-4 leading-tight bg-gradient-to-r from-teal-500 via-sky-400 to-purple-500 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(0,0,0,0.2)]"
-        >
-          {t('hero.name')}
-        </motion.h1>
-
-        <motion.h2
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="text-2xl md:text-4xl lg:text-5xl font-semibold text-gray-600 dark:text-gray-300 mb-6 h-12"
-        >
-          {currentRole}
-          <span className="animate-blink">|</span>
-        </motion.h2>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.7 }}
-          className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-xl mb-12 leading-relaxed mx-auto md:mx-0"
-        >
-          {t('hero.description')}
-        </motion.p>
-
+      {/* Scroll Indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 1 }}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2"
+      >
+        <span className="text-[10px] uppercase tracking-[0.2em] text-gray-400 font-bold">Scroll</span>
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.9 }}
-          className="flex flex-wrap md:flex-nowrap gap-4 justify-center md:justify-start"
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
         >
-          <motion.button
-            onClick={scrollToProjects}
-            className="group flex items-center gap-2 px-6 py-3 bg-teal-400 text-white dark:text-gray-950 font-medium rounded-lg transition-all duration-300 hover:shadow-xl hover:shadow-teal-400/30"
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-          >
-            {t('hero.viewProjects')}
-            <ExternalLink className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </motion.button>
-
-          <motion.button
-            onClick={scrollToContact}
-            className="group flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-gray-700 text-gray-950 dark:text-white font-medium rounded-lg transition-all duration-300 hover:border-teal-400 hover:text-teal-400 backdrop-blur-sm"
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-          >
-            {t('hero.contact')}
-            <Mail className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </motion.button>
+          <ChevronDown className="w-5 h-5 text-teal-500" />
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 };
