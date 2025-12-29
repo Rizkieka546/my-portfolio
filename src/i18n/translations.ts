@@ -175,33 +175,33 @@ export const translations = {
         },
 
         project2: {
-          name: "Sistem Inventori Sekolah",
-          description:
-            "Sistem inventori berbasis web untuk pengelolaan aset sekolah, dengan fokus pada kemudahan pencatatan, peminjaman, dan pelacakan data secara akurat.",
-        },
-
-        project3: {
-          name: "SkyMarket",
-          description:
-            "Sistem penjualan multi-role yang mendukung Admin, Kasir, dan Pelanggan, menggabungkan transaksi offline kasir dengan fitur pemesanan online dalam satu alur terpadu.",
-        },
-
-        project4: {
           name: "Aplikasi Cuaca",
           description:
             "Aplikasi cuaca sederhana yang memanfaatkan API publik untuk menampilkan informasi cuaca secara real-time berdasarkan lokasi pengguna.",
         },
 
-        project5: {
+        project3: {
           name: "FlowTask",
           description:
             "Aplikasi manajemen tugas dengan pendekatan tenang dan fokus, menekankan kesederhanaan, keputusan UI/UX yang matang, serta pola pikir produk nyata.",
         },
 
-        project6: {
+        project4: {
           name: "Dashboard Analitik Penjualan",
           description:
             "Dashboard analitik penjualan yang dirancang untuk menyajikan insight bisnis secara jelas. Menampilkan KPI pendapatan, rata-rata penjualan, perbandingan pertumbuhan, serta visualisasi tren penjualan harian dan tahunan dengan desain UI modern dan hierarki visual yang kuat.",
+        },
+
+        project5: {
+          name: "Sistem Inventori Sekolah",
+          description:
+            "Sistem inventori berbasis web untuk pengelolaan aset sekolah, dengan fokus pada kemudahan pencatatan, peminjaman, dan pelacakan data secara akurat.",
+        },
+
+        project6: {
+          name: "SkyMarket",
+          description:
+            "Sistem penjualan multi-role yang mendukung Admin, Kasir, dan Pelanggan, menggabungkan transaksi offline kasir dengan fitur pemesanan online dalam satu alur terpadu.",
         },
       },
 
