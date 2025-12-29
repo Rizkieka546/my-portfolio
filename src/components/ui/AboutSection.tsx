@@ -48,27 +48,6 @@ const AboutSection = () => {
                 {text}
               </motion.p>
             ))}
-
-            {/* List Keahlian Tambahan */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={isInView ? { opacity: 1 } : {}}
-              transition={{ delay: 0.6 }}
-              className="pt-4 grid grid-cols-2 gap-3 font-mono text-sm text-teal-600 dark:text-teal-400"
-            >
-              <div className="flex items-center gap-2 italic">
-                <span className="text-teal-500 font-bold">▹</span> Web Development
-              </div>
-              <div className="flex items-center gap-2 italic">
-                <span className="text-teal-500 font-bold">▹</span> UI/UX Implementation
-              </div>
-              <div className="flex items-center gap-2 italic">
-                <span className="text-teal-500 font-bold">▹</span> Responsive Design
-              </div>
-              <div className="flex items-center gap-2 italic">
-                <span className="text-teal-500 font-bold">▹</span> Clean Architecture
-              </div>
-            </motion.div>
           </div>
 
           {/* Kolom Foto (40% lebar pada desktop) */}

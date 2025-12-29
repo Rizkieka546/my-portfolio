@@ -22,22 +22,6 @@ const ProjectsSection = () => {
     },
     {
       name: t('projects.project2.name'),
-      description: t('projects.project2.description'),
-      tech: ['Laravel', 'JS', 'Tailwind', 'MySQL'],
-      demo: '#',
-      github: 'https://github.com/Rizkieka546/project_revository',
-      image: '/projects/dashboard-inventori.png',
-    },
-    {
-      name: t('projects.project3.name'),
-      description: t('projects.project3.description'),
-      tech: ['Laravel', 'JS', 'Tailwind', 'MySQL'],
-      demo: '#',
-      github: 'https://github.com/Rizkieka546/laravel-POS-SkyMarket',
-      image: '/projects/dashboard-skymarket.png',
-    },
-    {
-      name: t('projects.project4.name'),
       description: t('projects.project4.description'),
       tech: ['React', 'Tailwind', 'Public API'],
       demo: 'https://weather-app-sederhana.vercel.app/',
@@ -45,7 +29,7 @@ const ProjectsSection = () => {
       image: '/projects/weather.png',
     },
     {
-      name: t('projects.project5.name'),
+      name: t('projects.project3.name'),
       description: t('projects.project5.description'),
       tech: ['Next.Js', 'React', 'Tailwind', 'TS'],
       demo: 'https://landing-page-flowtask.vercel.app/',
@@ -53,12 +37,28 @@ const ProjectsSection = () => {
       image: '/projects/flowtask.png',
     },
     {
-      name: t('projects.project6.name'),
+      name: t('projects.project4.name'),
       description: t('projects.project6.description'),
       tech: ['Next.Js', 'React', 'Python','Tailwind', 'TS'],
       demo: 'https://frontend-sales-dashboard.vercel.app/',
       github: 'https://github.com/Rizkieka546/frontend-sales-dashboard',
       image: '/projects/sales-dashboard.png',
+    },
+    {
+      name: t('projects.project5.name'),
+      description: t('projects.project2.description'),
+      tech: ['Laravel', 'JS', 'Tailwind', 'MySQL'],
+      demo: '#',
+      github: 'https://github.com/Rizkieka546/project_revository',
+      image: '/projects/dashboard-inventori.png',
+    },
+    {
+      name: t('projects.project6.name'),
+      description: t('projects.project3.description'),
+      tech: ['Laravel', 'JS', 'Tailwind', 'MySQL'],
+      demo: '#',
+      github: 'https://github.com/Rizkieka546/laravel-POS-SkyMarket',
+      image: '/projects/dashboard-skymarket.png',
     },
   ];
 

@@ -49,33 +49,33 @@ export const translations = {
         },
 
         project2: {
-          name: "Inventory Management System",
-          description:
-            "A web-based inventory system for managing school assets, focused on simplifying item tracking, borrowing processes, and accurate record management.",
-        },
-
-        project3: {
-          name: "SkyMarket",
-          description:
-            "A multi-role commerce system supporting Admin, Cashier, and Customer roles, combining offline cashier transactions with online ordering features in a unified workflow.",
-        },
-
-        project4: {
           name: "Weather App",
           description:
             "A simple weather application that consumes public APIs to display real-time weather information based on the user's location.",
         },
 
-        project5: {
+        project3: {
           name: "FlowTask",
           description:
             "A calm and opinionated task management application designed to help individuals and small teams work with clarity and focus, emphasizing simplicity, thoughtful UI/UX decisions, and real-world product thinking.",
         },
 
-        project6: {
+        project4: {
           name: "Sales Analytics Dashboard",
           description:
             "A data-driven sales dashboard designed to provide clear business insights. Features include revenue KPIs, average sales metrics, growth comparison, and daily and yearly sales trend visualizations, built with a clean UI and strong visual hierarchy to support decision-making.",
+        },
+
+        project5: {
+          name: "Inventory Management System",
+          description:
+            "A web-based inventory system for managing school assets, focused on simplifying item tracking, borrowing processes, and accurate record management.",
+        },
+
+        project6: {
+          name: "SkyMarket",
+          description:
+            "A multi-role commerce system supporting Admin, Cashier, and Customer roles, combining offline cashier transactions with online ordering features in a unified workflow.",
         },
       },
 
@@ -218,7 +218,7 @@ export const translations = {
         },
 
         exp2: {
-          title: "PKL Backend Developer",
+          title: "PKL Backend Developer ",
           company: "PT Hexagon Karya Tama",
           period: "Agustus 2024 - November 2024",
           description:
