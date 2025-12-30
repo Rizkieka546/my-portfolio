@@ -28,7 +28,7 @@ const ProjectsSection = () => {
       key: 'project2',
       name: t('projects.project2.name'),
       description: t('projects.project2.description'),
-      category: 'Tools',
+      category: 'Frontend',
       tech: ['React', 'Tailwind', 'Public API'],
       demo: 'https://weather-app-sederhana.vercel.app/',
       github: 'https://github.com/Rizkieka546/weather-app-sederhana',
@@ -48,7 +48,7 @@ const ProjectsSection = () => {
       key: 'project4',
       name: t('projects.project4.name'),
       description: t('projects.project4.description'),
-      category: 'Frontend',
+      category: 'Backend',
       tech: ['Next.js', 'React', 'Python', 'Tailwind', 'TypeScript'],
       demo: 'https://frontend-sales-dashboard.vercel.app/',
       github: 'https://github.com/Rizkieka546/frontend-sales-dashboard',
@@ -76,12 +76,11 @@ const ProjectsSection = () => {
     },
   ], [t]);
 
-  // Logic filter
   const filteredProjects = projects.filter(p => 
     filter === 'All' || p.category === filter
   );
 
-  const categories = ['All', 'Frontend', 'Backend', 'Tools'];
+  const categories = ['All', 'Frontend', 'Backend'];
 
   return (
     <section id="projects" ref={ref} className="py-24 md:py-32 bg-white dark:bg-gray-950 transition-colors duration-500">
